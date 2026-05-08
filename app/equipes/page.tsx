@@ -1,5 +1,23 @@
 import Navbar from "@/app/components/Navbar";
 import Image from "next/image";
+import type { Metadata } from "next";
+import { siteConfig } from "../site-config";
+
+export const metadata: Metadata = {
+  title: "Les équipes du club basket",
+  description:
+    "Retrouvez les équipes de l'US Plombières Basket, club basket à Plombières-lès-Dijon près de Dijon, des catégories jeunes aux seniors.",
+  keywords: siteConfig.keywords,
+  alternates: {
+    canonical: "/equipes",
+  },
+  openGraph: {
+    title: "Équipes US Plombières Basket",
+    description:
+      "Les équipes jeunes et seniors du club de basket-ball US Plombières Basket à Plombières-lès-Dijon, près de Dijon.",
+    url: "/equipes",
+  },
+};
 
 export default function Equipes() {
   const teams = [
