@@ -29,7 +29,7 @@ export default function Club() {
             <div className="flex-1">
               <div className="space-y-4">
                 <p className="text-xl font-semibold text-[#004aad]">
-                  Fondé en 1922
+                  Depuis 1922
                 </p>
                 <p className="text-gray-700 leading-relaxed">
                   L'US Plombières, fondée en 1922, est le club de Basket-ball de la commune de Plombières-Lès-Dijon. 
@@ -38,7 +38,7 @@ export default function Club() {
                 </p>
                 
                 <div className="mt-6">
-                  <p className="font-bold text-[#004aad] mb-3">Nos équipes sont engagés en</p>
+                  <p className="font-bold text-[#004aad] mb-3">Nos équipes sont engagées en</p>
                   <ul className="text-gray-700 space-y-2 ml-4">
                     <li>• U13M (Championnat Départemental)</li>
                     <li>• U15M (Championnat Départemental)</li>
