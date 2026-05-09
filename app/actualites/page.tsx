@@ -1,5 +1,23 @@
 import Navbar from "@/app/components/Navbar";
 import Image from "next/image";
+import type { Metadata } from "next";
+import { siteConfig } from "../site-config";
+
+export const metadata: Metadata = {
+  title: "Actualités basket à Dijon",
+  description:
+    "Suivez les actualités de l'US Plombières Basket, club de basket-ball à Plombières-lès-Dijon près de Dijon.",
+  keywords: siteConfig.keywords,
+  alternates: {
+    canonical: "/actualites",
+  },
+  openGraph: {
+    title: "Actualités US Plombières Basket",
+    description:
+      "Les dernières actualités du club basket US Plombières Basket à Plombières-lès-Dijon, près de Dijon.",
+    url: "/actualites",
+  },
+};
 
 export default function Actualites() {
   return (
@@ -11,6 +29,9 @@ export default function Actualites() {
           <h1 className="text-4xl font-bold text-[#004aad] mb-4">
             Actualités
           </h1>
+          <p className="text-gray-700 leading-relaxed mb-8 max-w-3xl">
+            Retrouvez ici les actualités de l'USP, pour suivre la vie du club, ses événements et les temps forts de la saison.
+          </p>
           
           <div className="max-w-3xl space-y-6">
             <div className="p-8 border-l-4 border-[#239ccb] bg-gray-50 hover:shadow-md transition-shadow cursor-pointer">

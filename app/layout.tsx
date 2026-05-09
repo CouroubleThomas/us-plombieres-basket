@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { absoluteUrl, siteConfig } from "./site-config";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,8 +14,29 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "US Plombières Basket",
-  description: "Site officiel de l'US Plombières Basket",
+  metadataBase: new URL(absoluteUrl()),
+  title: {
+    default: siteConfig.siteName,
+    template: `%s | ${siteConfig.name}`,
+  },
+  description: siteConfig.description,
+  keywords: siteConfig.keywords,
+  alternates: {
+    canonical: "/le-club",
+  },
+  openGraph: {
+    type: "website",
+    locale: siteConfig.locale,
+    url: "/le-club",
+    title: siteConfig.siteName,
+    description: siteConfig.description,
+    siteName: siteConfig.name,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: siteConfig.siteName,
+    description: siteConfig.description,
+  },
 };
 
 export default function RootLayout({
@@ -22,12 +44,29 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const organizationJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "SportsOrganization",
+    name: siteConfig.name,
+    url: absoluteUrl("/le-club"),
+    sport: "Basketball",
+    areaServed: ["Plombieres-les-Dijon", "Dijon"],
+    description: siteConfig.description,
+    keywords: siteConfig.keywords.join(", "),
+  };
+
   return (
     <html
-      lang="en"
+      lang="fr"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+        />
+        {children}
+      </body>
     </html>
   );
 }
