@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { siteConfig } from "../site-config";
 
 export const metadata: Metadata = {
-  title: "Contact club basket Dijon",
+  title: "Contact",
   description:
     "Contactez l'US Plombières Basket, club de basket-ball à Plombières-lès-Dijon près de Dijon, pour les inscriptions et renseignements.",
   keywords: siteConfig.keywords,
@@ -24,12 +24,12 @@ export default function Contact() {
       <Navbar />
       
       <main className="flex-1 max-w-6xl mx-auto w-full px-4 py-12">
-        <div className="max-w-2xl mx-auto">
+        <div className="w-full xl:max-w-5xl mx-auto">
           <h1 className="text-4xl font-bold text-[#004aad] mb-8">
             Contactez-nous
           </h1>
           <p className="text-gray-700 leading-relaxed mb-6">
-           Pour nous rejoindre ou pour tout autre renseignement, n'hésitez pas à nous contacter par email.
+           Pour nous rejoindre ou pour tout autre renseignement, n'hésitez pas à nous contacter.
           </p>
           
           <div className="space-y-4">
@@ -40,6 +40,14 @@ export default function Contact() {
               >
                 usp.plombieres@hotmail.com
               </a>
+            </p>
+
+            <p className="text-gray-700">
+              SMS Franck : <span className="font-semibold">06 77 78 44 40</span>
+            </p>
+
+            <p className="text-gray-700">
+              Gymnase Maurice Dubois, rue du Moulin, 21370 Plombieres les Dijon
             </p>
             
             <p>

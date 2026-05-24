@@ -22,12 +22,12 @@ export const metadata: Metadata = {
   description: siteConfig.description,
   keywords: siteConfig.keywords,
   alternates: {
-    canonical: "/le-club",
+    canonical: "/",
   },
   openGraph: {
     type: "website",
     locale: siteConfig.locale,
-    url: "/le-club",
+    url: "/",
     title: siteConfig.siteName,
     description: siteConfig.description,
     siteName: siteConfig.name,
@@ -48,9 +48,9 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "SportsOrganization",
     name: siteConfig.name,
-    url: absoluteUrl("/le-club"),
+    url: absoluteUrl("/"),
     sport: "Basketball",
-    areaServed: ["Plombieres-les-Dijon", "Dijon"],
+    areaServed: ["Plombieres-les-Dijon", "Dijon", "Cote-d'Or", "Côte-d'Or"],
     description: siteConfig.description,
     keywords: siteConfig.keywords.join(", "),
   };

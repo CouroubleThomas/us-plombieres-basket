@@ -1,23 +1,30 @@
 export const siteConfig = {
   name: "US Plombières Basket",
-  siteName: "US Plombières Basket | Club de basket-ball à Plombières-lès-Dijon",
+  siteName: "US Plombières Basket | Club basket Dijon et Côte-d'Or",
   description:
-    "US Plombières Basket, club de basket-ball à Plombières-lès-Dijon près de Dijon. Actualités, équipes, informations club et contact du club basket dijonnais.",
+    "US Plombières Basket, club basket Dijon à Plombières-lès-Dijon en Côte-d'Or. Actualités, équipes, informations club et contact.",
   locale: "fr_FR",
   keywords: [
     "basket",
     "basket-ball",
     "dijon",
+    "côte d'or",
+    "cote d'or",
+    "cote dor",
     "plombieres les dijon",
     "plombières-lès-dijon",
     "dijon basket",
     "dijon club basket",
     "club basket Dijon",
+    "club basket cote d'or",
+    "club basket côte d'or",
+    "club de basket dijon",
+    "club basket dijonnais",
     "basket Plombieres-les-Dijon",
     "basket Plombières-lès-Dijon",
     "US Plombières Basket",
   ],
-  paths: ["/le-club", "/equipes", "/actualites", "/contact"],
+  paths: ["/", "/actualites", "/le-club", "/equipes", "/contact"],
 };
 
 export function getSiteUrl() {
