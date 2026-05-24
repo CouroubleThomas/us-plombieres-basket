@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { siteConfig } from "../site-config";
 
 export const metadata: Metadata = {
-  title: "Contact club basket Dijon",
+  title: "Contact",
   description:
     "Contactez l'US Plombières Basket, club de basket-ball à Plombières-lès-Dijon près de Dijon, pour les inscriptions et renseignements.",
   keywords: siteConfig.keywords,
