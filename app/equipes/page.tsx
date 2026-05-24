@@ -22,7 +22,6 @@ export const metadata: Metadata = {
 export default function Equipes() {
   const teams = [
     { id: 1, name: "U11M" },
-    { id: 2, name: "U13M" },
     { id: 3, name: "U15M" },
     { id: 4, name: "U18M1" },
     { id: 5, name: "U18M2" },
