@@ -57,7 +57,7 @@ export default function Club() {
                 <div className="mt-6">
                   <p className="font-bold text-[#004aad] mb-3">Nos équipes sont engagées en</p>
                   <ul className="text-gray-700 space-y-2 ml-4">
-                    <li>• U13M (Championnat Départemental)</li>
+                    <li>• U11M (Championnat Départemental)</li>
                     <li>• U15M (Championnat Départemental)</li>
                     <li>• U18M (Championnat Départemental)</li>
                     <li>• U18M (Championnat Régional)</li>
